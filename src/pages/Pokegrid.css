@@ -79,3 +79,56 @@
   align-items: center;
 }
 
+@media (max-width: 1024px) {
+  .pokegrid-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .pokegrid-controls input {
+    width: 160px;
+    font-size: 0.9rem;
+  }
+
+  .pokegrid-controls button {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .pokegrid-container {
+    padding: 0 1rem 2rem 1rem;
+  }
+
+  .pokegrid-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .pokegrid-controls {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.8rem;
+  }
+
+  .pokegrid-controls input {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  .pokegrid-controls button {
+    width: 100%;
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+
+  .pagination-button {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
+
+  .pokegrid-pagination {
+    flex-direction: column;
+    align-items: center;
+  }
+}

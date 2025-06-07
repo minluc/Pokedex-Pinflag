@@ -127,28 +127,28 @@ function PokeGrid() {
 
       <div className="pokegrid-pagination">
         <button className="pagination-button" onClick={() => setPage(0)}>
-          ⏮ Inicio
+          ⏮ 
         </button>
 
         <button className="pagination-button" onClick={() => setPage(Math.max(0, page - 1))}>
-          ◀ Anterior
+          ◀ 
         </button>
 
-        <span className="pagination-page">Página {page + 1}</span>
+        <span className="pagination-page">Page {page + 1}</span>
 
         <button className="pagination-button" onClick={() => {
           if ((page + 1) * pageSize < filtered.length) {
             setPage(page + 1);
           }
         }}>
-          Siguiente ▶
+           ▶
         </button>
 
         <button className="pagination-button" onClick={() => {
           const lastPage = Math.floor((filtered.length - 1) / pageSize);
           setPage(lastPage);
         }}>
-          Final ⏭
+           ⏭
         </button>
       </div>
     </div>

@@ -1,0 +1,46 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Landing Component > matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="landing-container"
+  >
+    <img
+      class="Logo"
+      src="src/assets/Logo.png"
+    />
+    <img
+      alt="Charmander"
+      class="charmander-image"
+      src="charmander.png"
+    />
+    <div
+      class="landing-content"
+    >
+      <h1
+        class="landing-title"
+      >
+        ¡Bienvenido a Pokedex!
+      </h1>
+      <p
+        class="landing-subtitle"
+      >
+        Descubre, aprende y sorpréndete con el mundo de los Pokémon. 
+        <br />
+        <br />
+        Explora cada criatura, conoce sus habilidades y encuentra tus favoritos.
+      </p>
+      <button
+        class="start-button"
+      >
+        START
+      </button>
+    </div>
+    <img
+      alt="Pikachu waving"
+      class="pikachu-image"
+      src="pikachu.png"
+    />
+  </div>
+</DocumentFragment>
+`;

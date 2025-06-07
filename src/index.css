@@ -1,16 +1,14 @@
-/* Reset básico (opcional) */
 html, body, #root {
   margin: 0;
   padding: 0;
   width: 100%;
   min-height: 100vh;
-  /* overflow: hidden; */
 }
 
 h1 {
   font-family: 'Sigmar One';
   color: #2f2f2f;
-  font-size: 3rem;
+  font-size: 3rem; 
 }
 
 p {

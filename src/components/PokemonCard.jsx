@@ -9,7 +9,7 @@ function PokemonCard({ name, image, isFavorite, onClick, onToggleFavorite }) {
         <button
           className="favorite-button"
           onClick={(e) => {
-            e.stopPropagation(); // evitar que clic en corazón active onClick de la tarjeta
+            e.stopPropagation();
             onToggleFavorite();
           }}
         >

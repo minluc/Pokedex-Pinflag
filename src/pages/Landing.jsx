@@ -27,10 +27,10 @@ function Landing() {
           <img src={charmander} alt="Charmander" className="charmander-image" />
 
           <div className="landing-content">
-            <h1 className="landing-title">¡Bienvenido a Pokedex!</h1>
+            <h1 className="landing-title">Welcome to Pokedex!</h1>
             <p className="landing-subtitle">
-              Descubre, aprende y sorpréndete con el mundo de los Pokémon. <br/><br/>
-              Explora cada criatura, conoce sus habilidades y encuentra tus favoritos.
+              Discover, learn, and be amazed by the world of Pokémon. <br/><br/>
+              Explore each creature, learn their abilities, and find your favorites.
             </p>
             <button className="start-button" onClick={handleStart}>
               START

@@ -25,7 +25,6 @@
   object-fit: contain;
 }
 
-
 .bounce-in {
   animation: bounceInUp 1.2s ease forwards, spin 1s linear infinite 1.2s;
 }
