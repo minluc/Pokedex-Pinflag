@@ -1,0 +1,149 @@
+
+
+.pokedex-page-wrapper {
+  height: 100vh;
+  background: linear-gradient(to bottom, #c5eedb, #89b88f);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  gap: 1rem;
+}
+
+/* Contenedor principal horizontal */
+.pokedex-main-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 4rem;
+  max-width: 1200px;
+  width: 100%;
+  flex-grow: 1;
+  max-height: calc(100vh - 230px); /* ajusta según el alto del botón */
+  box-sizing: border-box;
+}
+
+/* Lado izquierdo con artwork y corazón */
+.pokedex-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 400px;
+  height: 450px; /* altura fija */
+  background: #ffffffdd;
+  border-radius: 20px;
+  border: 4px solid #2f2f2f;
+  padding: 2rem;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+  box-sizing: border-box;
+}
+
+/* Imagen artwork grande */
+.pokedex-artwork {
+  width: 100%;
+  height: auto;
+  max-width: 380px;
+  border-radius: 12px;
+}
+
+/* Botón de favorito grande y centrado */
+.favorite-button {
+  background: none;
+  border: none;
+  font-size: 3rem;
+  margin-top: auto; /* para empujarlo al fondo del contenedor */
+  cursor: pointer;
+  transition: transform 0.15s ease-in-out;
+}
+
+.favorite-button:hover {
+  transform: scale(1.2);
+}
+
+/* Lado derecho con info */
+.pokedex-right {
+  width: 600px;
+  height: 450px; /* altura fija */
+  background: #fff;
+  padding: 3rem 2rem;
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.20);
+  border: 2px solid #ccc;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* centrado vertical */
+  align-items: center; /* centrado horizontal */
+  text-align: center;
+  box-sizing: border-box;
+}
+
+/* Título */
+.pokedex-right h1 {
+  font-size: 2.2rem;
+  margin: 0;
+  text-transform: capitalize;
+}
+
+/* Sprite animado centrado */
+.pokedex-sprite {
+  width: 110px;
+  height: 110px;
+  image-rendering: pixelated;
+  animation: bounce 1.2s infinite alternate ease-in-out;
+  margin: 1rem 0;
+}
+
+/* Descripción */
+.pokedex-description {
+  font-style: italic;
+  font-size: 1rem;
+  color: #333;
+  margin: 0.5rem 0;
+}
+
+/* Párrafos info */
+.pokedex-right p {
+  font-size: 1.05rem;
+  margin: 0.2rem 0;
+}
+
+/* Botón volver pegado al fondo del viewport */
+.pokedex-back-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding-bottom: 1rem;
+}
+
+
+/* Botón volver */
+.back-button {
+  background: #2f2f2f;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 0.75rem 3rem;
+  cursor: pointer;
+  font-size: 1.2rem;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+  transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+  background: #444444;
+}
+
+/* Animación */
+@keyframes bounce {
+  from { transform: translateY(0); }
+  to { transform: translateY(-10px); }
+}
+
+/* Loader */
+.pokedex-loading {
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 6rem;
+}
+

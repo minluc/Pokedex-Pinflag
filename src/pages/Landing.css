@@ -1,0 +1,149 @@
+.landing-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #c5eedb, #89b88f);
+}
+
+.landing-content {
+  position: relative;
+  width: 350px;
+  min-height: 500px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  padding: 4rem;
+  text-align: center;
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  z-index: 2;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  animation: fadeInCenter 1s ease-out forwards;
+}
+
+.landing-title {
+  margin-bottom: 1rem;
+}
+
+.landing-subtitle {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  color: #333;
+  margin-top: 3rem;
+}
+
+.start-button {
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  background-color: #2f2f2f;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.start-button:hover {
+  background-color: #1a1a1a;
+  transform: scale(1.08);
+}
+
+.charmander-image {
+  position: absolute;
+  left: calc(50% - 620px);
+  top: 25%;
+  transform: translateY(-70%);
+  width: 500px;
+  z-index: 10;
+  filter: drop-shadow(4px 4px 12px rgba(0, 0, 0, 0.3));
+  animation: slideInLeft 2s ease-out forwards;
+}
+
+.pikachu-image {
+  position: absolute;
+  right: calc(50% - 560px);
+  top: 28%;
+  transform: translateY(-70%);
+  width: 360px;
+  z-index: 10;
+  filter: drop-shadow(4px 4px 12px rgba(0, 0, 0, 0.3));
+  animation: slideInRight 2s ease-out forwards;
+}
+
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInRight {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInCenter {
+  0% {
+    transform: scale(0.95);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 1024px) and (min-width: 769px) {
+  .charmander-image {
+    width: 250px;
+    left: calc(50% - 400px);
+  }
+
+  .pikachu-image {
+    width: 180px;
+    right: calc(50% - 370px);
+  }
+}
+
+@media (max-width: 768px) {
+  .landing-container {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .landing-content {
+    width: 90%;
+    min-height: 380px;
+    padding: 2rem 1.5rem;
+  }
+
+  .charmander-image {
+    display: none;
+  }
+
+  .pikachu-image {
+    position: static;
+    width: 150px;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    transform: none;
+    animation: none;
+    display: block;
+    align-self: center;
+  }
+}
+
+
+

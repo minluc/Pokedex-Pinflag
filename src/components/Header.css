@@ -1,0 +1,132 @@
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background: #ffffffcc;
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid #ccc;
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin: 0;
+  z-index: 20;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  gap: 1rem;
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+}
+
+.header-logo {
+  width: 120px;
+  height: auto;
+}
+
+.header-search,
+.header-select,
+.favorites-button {
+  margin-left: 1rem;
+}
+
+.header-search {
+  flex-grow: 3;
+  min-width: 240px;
+  padding: 0.6rem 1rem;
+  border-radius: 10px;
+  border: 1px solid #2f2f2f;
+  font-size: 1rem;
+}
+
+.header-select {
+  flex-grow: 1;
+  min-width: 130px;
+  max-width: 150px;
+  padding: 0.6rem 1rem;
+  border-radius: 10px;
+  border: 1px solid #2f2f2f;
+  font-size: 1rem;
+}
+
+.favorites-button {
+  flex-grow: 1;
+  min-width: 130px;
+  max-width: 150px;
+  padding: 0.6rem 1rem;
+  font-size: 1rem;
+  background: #2f2f2f;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  white-space: nowrap;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.favorites-button:hover {
+  background-color: #1a1a1a;
+}
+
+@media (max-width: 900px) {
+  .header-container {
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.5rem;
+  }
+
+  .logo-section,
+  .search-row,
+  .filter-row {
+    display: flex;
+    width: 100%;
+    gap: 1rem;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .header-logo {
+    width: 100px;
+  }
+
+  .header-search {
+    flex-grow: 1;
+    margin-left: 0;
+    min-width: 0;
+    width: 100%;
+  }
+
+  .header-select,
+  .favorites-button {
+    flex-grow: 1;
+    margin-left: 0;
+    max-width: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .header-logo {
+    width: 80px;
+  }
+
+  .header-search,
+  .header-select,
+  .favorites-button {
+    font-size: 0.85rem;
+    padding: 0.4rem 0.7rem;
+    border-radius: 8px;
+    width: 100%;
+  }
+
+  .search-row { 
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+

@@ -1,0 +1,81 @@
+.pokegrid-container {
+  min-height: 100vh;
+  padding: 0 2rem 4rem 2rem;
+  background: linear-gradient(to bottom, #c5eedb, #89b88f);
+  box-sizing: border-box;
+}
+
+.pokegrid-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.pokegrid-controls input {
+  padding: 0.5rem;
+  font-size: 1rem;
+  width: 200px;
+}
+
+.pokegrid-controls button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  background: #2f2f2f;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.pokegrid-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.pokegrid-loading {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.pokegrid-pagination {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.pokegrid-pagination {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.pagination-button {
+  background: #2f2f2f;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 0.6rem 1.2rem;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  white-space: nowrap;
+}
+
+.pagination-button:hover {
+  background-color: #1a1a1a;
+}
+
+.pagination-page {
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #2f2f2f;
+  display: flex;
+  align-items: center;
+}
+

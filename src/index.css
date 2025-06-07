@@ -1,0 +1,27 @@
+/* Reset básico (opcional) */
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+  /* overflow: hidden; */
+}
+
+h1 {
+  font-family: 'Sigmar One';
+  color: #2f2f2f;
+  font-size: 3rem;
+}
+
+p {
+  font-family: 'Roboto Condensed Variable', sans-serif;
+}
+
+.Logo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 130px;
+  height: auto;
+  z-index: 10;
+}
